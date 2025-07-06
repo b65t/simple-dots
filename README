@@ -1,0 +1,14 @@
+simple-dots
+===========
+
+just a simple dots for my alpine setup
+
+info:
+  wc = river
+  bar = waybar
+  appmenu = fuzzel
+  term = foot
+
+install:
+  just run:
+    make setup

@@ -1,0 +1,79 @@
+* {
+    all: unset;
+    font-family: "ubuntu";
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: #000;
+    color: #ffffff;
+}
+
+#tags button {
+    padding: 0 2px;
+    color: #303030;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#tags button.occupied {
+    color: #606060
+}
+
+#tags button.focused {
+    color: #fff
+}
+
+#tags button.urgent {
+    background-color: #eb4d4b;
+}
+
+#tags button:hover {
+    color: #fff;
+}
+
+#mode {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+.modules-left > widget:first-child > #tags {
+    margin-left: 0;
+}
+
+#clock {
+	color: #fff;
+	font-weight: bold;
+	margin-right: 5px;
+        font-size: 15px;
+}
+
+#network {
+    color: #fff;
+    font-size: 14px;
+}
+
+#network.disconnected {
+    color: #303030
+}
+
+#pulseaudio {
+    color: #fff;
+    font-size: 12px;
+}
+
+#pulseaudio.muted {
+    color: #303030;
+}
+
+#tray {
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
