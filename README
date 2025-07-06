@@ -11,4 +11,4 @@ info:
 
 install:
   just run:
-    make setup
+    ./justsh.sh setup
