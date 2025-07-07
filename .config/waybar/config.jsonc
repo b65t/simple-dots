@@ -1,13 +1,16 @@
 {
     "spacing": 4,
     "modules-left": [
-        "river/tags"
+        "custom/logo",
+        "clock"
+    ],
+    "modules-center": [
+	"river/tags"
     ],
     "modules-right": [
         "tray",
         "pulseaudio",
-        "network",
-        "clock"
+        "network"
     ],
     "sway/workspaces": {
         "disable-scroll": true,
@@ -30,6 +33,7 @@
         "spacing": 10
     },
     "clock": {
+	"format": "{:%H:%M - %A, %B %d}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
@@ -52,5 +56,9 @@
             "default": ["󰝟", "󰕿", "󰖀", "󰕾"]
         },
         "on-click": "pavucontrol"
+    },
+    "custom/logo": {
+	    "format": " ",
+	    "on-click": "~/.config/fuzzel/settings.sh"
     }
 }
