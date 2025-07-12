@@ -30,11 +30,14 @@ return {
     end,
   },
   {
-    'echasnovski/mini.hipatterns',
-    version = '*',
+    "norcalli/nvim-colorizer.lua",
     config = function()
-      local hipatterns = require('mini.hipatterns')
-      hipatterns.setup()
-    end,
+      require("colorizer").setup()
+    end
+  },
+  {
+    'akinsho/toggleterm.nvim',
+    version = "*",
+    config = true
   }
 }

@@ -8,11 +8,21 @@
         icons_enabled = true,
       },
       sections = {
-        lualine_a = { "mode" },
-        lualine_b = {  },
-        lualine_c = {"filename", "branch", "diagnostics"},
+        lualine_a = {  },
+        lualine_b = {  {
+          function() return '▓' end,
+          padding = { left = 0, right = 0 },
+          color = { bg = 'NONE' }
+          }, "mode"
+        },
+        lualine_c = { "filename", "branch", "diagnostics"},
         lualine_x = {"diff" },
-        lualine_y = {  },
+        lualine_y = { "filetype", {
+          function() return '▓' end,
+          padding = { left = 0, right = 0 },
+          color = { bg = 'NONE' }
+          } 
+        },
         lualine_z = {  },
       },
     },
