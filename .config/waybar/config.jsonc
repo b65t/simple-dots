@@ -1,17 +1,22 @@
 {
     "spacing": 4,
+    "margin": "3 3 0 3",
     "modules-left": [
         "custom/logo",
-        "clock"
-    ],
-    "modules-center": [
-	"river/tags"
-    ],
-    "modules-right": [
-        "tray",
-        "pulseaudio",
-        "network"
-    ],
+	"river/tags",
+	"pulseaudio",
+	"network",
+	"tray",
+	"clock"
+	],
+	//    "modules-center": [
+	// "river/tags"
+	//    ],
+	//    "modules-right": [
+	//        "tray",
+	//        "pulseaudio",
+	//        "network"
+	//    ],
     "sway/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
@@ -33,14 +38,14 @@
         "spacing": 10
     },
     "clock": {
-	"format": "{:%H:%M - %A, %B %d}",
+	"format": "{:%H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
     "network": {
         "format-wifi": "{icon}",
         "format-disconnected": "󰤭",
-	"on-click": "kitty nmtui",
+	"on-click": "foot nmtui",
                 "format-icons": [
             "󰤯",
             "󰤟",

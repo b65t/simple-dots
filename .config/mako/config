@@ -9,7 +9,7 @@ max-icon-size=36
 icon-location=left
 format=<b>%s</b>\n%b
 text-alignment=left
-anchor=top-center
+anchor=top-left
 
 [urgency=low]
 default-timeout=2500

@@ -4,7 +4,7 @@ end
 
 function fish_prompt
 printf  '%s' \
-        (set_color normal) (set_color -o blue) " $USER >" \
+        (set_color normal) (set_color -o blue) " " \
         (set_color normal) (set_color -o black) " " 
 end
 function fish_right_prompt
@@ -21,5 +21,3 @@ alias ds="doas apk add"
 alias dr="doas apk del"
 alias dsy="doas apk update"
 alias m="mkdir"
-
-set -x SUDO_PROMPT "pass pls: "

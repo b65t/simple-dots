@@ -1,12 +1,17 @@
 * {
     all: unset;
-    font-family: noto sans;
+    font-family: "noto sans", "nerd fonts symbols";
     min-height: 0;
 }
 
 window#waybar {
-    background-color: #000;
+    background-color: transparent;
     color: #ffffff;
+}
+
+.modules-left {
+	background: #000;
+	border-radius: 8px;
 }
 
 #tags button {
@@ -35,14 +40,14 @@ window#waybar {
 #clock {
 	color: #fff;
 	font-weight: bold;
-	margin-left: 5px;
+	margin: 0 5px;
         font-size: 15px;
 }
 
 #network {
     color: #fff;
-    font-size: 14px;
-    margin-right: 5px;
+    font-size: 13px;
+    /* margin-right: 5px; */
 }
 
 #network.disconnected {
@@ -51,7 +56,7 @@ window#waybar {
 
 #pulseaudio {
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 #pulseaudio.muted {

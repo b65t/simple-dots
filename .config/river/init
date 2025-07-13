@@ -13,7 +13,7 @@
 
 # autostart
 riverctl spawn "waybar"
-riverctl spawn "swaybg -i "/home/islam/Background/wallhaven-01jgp1.png" -m fill"
+riverctl spawn "swaybg -i "/home/islam/Background/103123878_p0.jpg" -m fill"
 riverctl spawn "mako"
 riverctl spawn "/usr/libexec/pipewire-launcher"
 riverctl spawn "foot -s"
