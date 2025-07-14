@@ -16,7 +16,7 @@ return {
   {
     'echasnovski/mini.starter',
     version = '*',
-    config = function() 
+    config = function()
       local starter = require('mini.starter')
       starter.setup({
         evaluate_single = true,
@@ -39,5 +39,20 @@ return {
     'akinsho/toggleterm.nvim',
     version = "*",
     config = true
+  },
+  {
+    "ibhagwan/fzf-lua",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = {}
+  },
+  {
+    'petertriho/nvim-scrollbar',
+    opts = {
+      marks = {
+        Cursor = {
+          text = ""
+        },
+      },
+    }
   }
 }
