@@ -10,18 +10,18 @@
       sections = {
         lualine_a = {  },
         lualine_b = {  {
-          function() return '▓' end,
+          function() return '█' end,
           padding = { left = 0, right = 0 },
           color = { bg = 'NONE' }
           }, "mode"
         },
         lualine_c = { "filename", "branch", "diagnostics"},
-        lualine_x = {"diff" },
-        lualine_y = { "filetype", {
-          function() return '▓' end,
+        lualine_x = {"diff", "filetype" },
+        lualine_y = { {
+          function() return '▄' end,
           padding = { left = 0, right = 0 },
           color = { bg = 'NONE' }
-          } 
+          }
         },
         lualine_z = {  },
       },

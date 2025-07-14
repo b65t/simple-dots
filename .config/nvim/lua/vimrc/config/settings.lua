@@ -17,3 +17,5 @@ g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
 
 opt.arabicshape = true
+
+opt.termguicolors = true
