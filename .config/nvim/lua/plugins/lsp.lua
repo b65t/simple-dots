@@ -14,8 +14,7 @@ return {
           "cssls",
           "clangd",
           "bashls",
-          -- "pylsp",
-	  -- "gopls"
+          "tailwindcss-language-server"
         }
       })
     end
@@ -38,10 +37,7 @@ return {
       lspconfig.bashls.setup({
 	capabilities = capabilities
       })
-      lspconfig.pylsp.setup({
-	capabilities = capabilities
-      })
-      lspconfig.gopls.setup({
+      lspconfig.tailwindcss.setup({
 	capabilities = capabilities
       })
    end

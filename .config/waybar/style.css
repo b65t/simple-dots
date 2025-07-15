@@ -1,6 +1,6 @@
 * {
     all: unset;
-    font-family: "noto sans", "nerd fonts symbols";
+    font-family: "ubuntu nerd font";
     min-height: 0;
 }
 
@@ -14,26 +14,26 @@ window#waybar {
 	border-radius: 8px;
 }
 
-#tags button {
+#workspaces button {
     padding: 0 2px;
-    color: #303030;
+    color: #606060;
     font-weight: bold;
     font-size: 15px;
 }
 
-#tags button.occupied {
-    color: #606060
+#workspaces button.empty {
+    color: #303030
 }
 
-#tags button.focused {
+#workspaces button.focused {
     color: #fff;
 }
 
-#tags button.urgent {
+#workspaces button.urgent {
     background-color: #eb4d4b;
 }
 
-#tags button:hover {
+#workspaces button:hover {
     color: #fff;
 }
 

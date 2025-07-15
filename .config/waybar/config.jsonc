@@ -1,9 +1,10 @@
 {
     "spacing": 4,
-    "margin": "3 3 0 3",
+    "margin": "0 3 3 3",
+    "position": "bottom",
     "modules-left": [
         "custom/logo",
-	"river/tags",
+	"sway/workspaces",
 	"pulseaudio",
 	"network",
 	"tray",

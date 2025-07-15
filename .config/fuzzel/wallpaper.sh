@@ -7,8 +7,8 @@ done | fuzzel -d -p " Select wallpaper")
 
 [ -z "$CHOICE" ] && { echo "No wallpaper selected"; exit 1; }
 
-# sed -i "s|bg .* fill|bg \"$CHOICE\" fill|" ~/.config/sway/config
+sed -i "s|bg .* fill|bg \"$CHOICE\" fill|" ~/.config/sway/config
 
 pkill swaybg
 swaybg -i $CHOICE -m fill &
-sed -i "s|riverctl spawn \"swaybg -i .* -m fill\"|riverctl spawn \"swaybg -i \"$CHOICE\" -m fill\"|" ~/.config/river/init
+# sed -i "s|riverctl spawn \"swaybg -i .* -m fill\"|riverctl spawn \"swaybg -i \"$CHOICE\" -m fill\"|" ~/.config/river/init

@@ -127,5 +127,10 @@ return {
   {
     "j-hui/fidget.nvim",
     opts = {}
+  },
+  {
+    'vyfor/cord.nvim',
+    build = ':Cord update',
+    opts = {}
   }
 }
