@@ -1,5 +1,0 @@
-require("config.settings")
-require("config.binds")
-require("config.lazy")
-require("lazy").setup("plugins")
-require("config.autostart")
